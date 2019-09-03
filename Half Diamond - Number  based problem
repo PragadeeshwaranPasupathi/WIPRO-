@@ -1,0 +1,33 @@
+/*
+This program generate the output as 
+5
+66
+777
+8888
+99999
+8888
+777
+66
+5
+*/
+
+#include<stdio.h>
+int main(){
+	int i,j,n,col=1,val;
+	scanf("%d",&val);
+	scanf("%d",&n);
+	for(i=1;i<n*2;i++){
+		for(j=1;j<=col;j++){
+			printf("%d",val);
+		}
+		if(i<n){
+			++val;
+			++col;
+		}
+		else{
+			--val;
+			--col;
+		}
+		printf("\n");
+	}
+}
